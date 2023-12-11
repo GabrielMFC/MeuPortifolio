@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <div id="opcao">
+            <img id="opcaoimg" src="opcoes.png" alt="">
+                <div id="opcaoaberta">
+                    <p class="itensalinhados" id="menu"></p>
+                    <p class="itensalinhados" id="habilidades"></p>
+                    <p class="itensalinhados" id="contato"></p>
+                    <p class="itensalinhados" id="projetos"></p>
+                    <p class="itensalinhados" id="sobremim"></p>
+                </div>
+            </div>
+    </div>
+    <script>
+        let fecharopcao = 0
+        let opcao = document.getElementById("opcao")
+        let opcaoaberta = document.getElementById("opcaoaberta")
+        document.getElementById("opcao").addEventListener("click", function abriropcoes() {
+            if(fecharopcao == 0){
+            fecharopcao = 1
+            opcaoaberta.classList.add("abrir")
+            document.getElementById("menu").innerHTML = "Menu"
+            document.getElementById("habilidades").innerHTML = "Habilidades"
+            document.getElementById("contato").innerHTML = "Contato"
+            document.getElementById("projetos").innerHTML = "Projetos"
+            document.getElementById("sobremim").innerHTML = "Sobre mim"
+            }else{
+                opcaoaberta.classList.remove("abrir")
+                fecharopcao = 0
+                document.getElementById("menu").innerHTML = ""
+            document.getElementById("habilidades").innerHTML = ""
+            document.getElementById("contato").innerHTML = ""
+            document.getElementById("projetos").innerHTML = ""
+            document.getElementById("sobremim").innerHTML = ""
+            }
+        })
+    </script>
+</body>
+</html>
