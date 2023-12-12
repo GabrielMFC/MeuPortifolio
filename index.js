@@ -28,37 +28,42 @@ let fecharopcao = 0
             }
         })
         opcao.addEventListener("mouseenter", function rotacionar() {
-            opcao.style.transform = "rotate(180deg)"
+            opcao.style.transform = "rotate(-90deg)"
         })
         opcao.addEventListener("mouseleave", function rotacionarAoContrario() {
-            opcao.style.transform = "rotate(-180deg)"
+            opcao.style.transform = "rotate(180deg)"
             }
         )
         
         if(pagina == "http://127.0.0.1/"){
             menu.style.textDecoration = "underline"
             menu.style.textDecorationColor = "purple"
+            menu.style.color = "purple"
             menu.style.cursor = "default"
         }
         if(pagina == "/index.html"){
             menu.style.textDecoration = "underline"
             menu.style.textDecorationColor = "purple"
             menu.style.cursor = "default"
+            menu.style.color = "purple"
         }
         if(pagina == "/habilidades.html") {
             habilidades.style.textDecoration = "underline"
             habilidades.style.textDecorationColor = "purple"
             habilidades.style.cursor = "default"
+            habilidades.style.color = "purple"
         }
         if(pagina == "/projetos.html"){
             projetos.style.textDecoration = "underline"
             projetos.style.textDecorationColor = "purple"
             projetos.style.cursor = "default"
+            projetos.style.color = "purple"
         }
         if(pagina == "/sobremim.html"){
             sobremim.style.textDecoration = "underline"
             sobremim.style.textDecorationColor = "purple"
             sobremim.style.cursor = "default"
+            sobremim.style.color = "purple"
         }
         menu.addEventListener("click", function entrarmenu() {
             document.getElementById("linkmenu").href = "index.html"

@@ -1,6 +1,6 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
 }
 body,html{
     overflow: hidden;
@@ -16,7 +16,7 @@ body{
     height: 14vh;
     display: flex;
     justify-content: right;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.795);
 }
 @keyframes balada {
     10%{
@@ -85,6 +85,7 @@ p{
     margin-right: 9vh;
     border-radius: 15% 0% 15% 15%;
     text-align: center;
+    z-index: 1;
 }
 a{
     text-decoration: none;
@@ -103,18 +104,89 @@ a{
     text-decoration-color: purple;
     cursor: pointer;
 }
+#centralizarflexifoto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 #foto{
     border-radius: 50%;
     width: 60vh;
     height: 60vh;
     background-color: blue;
     position: absolute;
-    left: 4vh;
-    top: 20%;
+    top: 30%;
     animation: balada 10s infinite;
     overflow: hidden;
+    z-index: 0;
 }
 #minhafoto{
     width: 100%;
     height: 110%;
+    z-index: 0;
+}
+#frasedeola{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    top: 15%;
+}
+#chatdopersonagem{
+    width: 50vh;
+    height: 30vh;
+    text-align: left;
+    border-radius: 5% 5% 0% 5%;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    background-color: rgba(128, 128, 128, 0.641);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.449);
+}
+p{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#olaeusou{
+    font-size: 3vh;
+    color: white;
+}
+#nome{
+    font-size: 4.3vh;
+    color: rgba(148, 0, 211, 0.426);
+}
+#eugostummm{
+    margin-left: 7vh;
+}
+#webdev{
+    text-align: center;
+    color: purple;
+}
+#circulodaimg{
+    background-color: black;
+    border-radius: 50%;
+    width: 6vh;
+    height: 6vh;
+    overflow: hidden;
+}
+#imagemgithub{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    body{
+        overflow: scroll;
+    }
+    #chatdopersonagem{
+        position: absolute;
+        top: 70%;
+        left: 5%;
+    }
+    #foto{
+        width: 50vh;
+        height: 50vh;
+    }
 }
