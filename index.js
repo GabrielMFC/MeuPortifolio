@@ -76,4 +76,5 @@ let fecharopcao = 0
         menu.addEventListener("mouseenter", function adicionarunderlinepromenu() {
         projetos.addEventListener()
         sobremim.addEventListener()
+        oi
       */
