@@ -3,12 +3,13 @@
     padding: 0px;
 }
 body,html{
-    overflow: hidden;
+
     width: 100%;
     height: 100%;
 }
 body{
     background-color: rgba(0, 0, 0, 0.764);
+    overflow: hidden;
 }
 #cabecalho{
     background-color: rgba(0, 0, 0, 0.333);
@@ -138,11 +139,10 @@ a{
 #chatdopersonagem{
     width: 50vh;
     height: 30vh;
-    text-align: left;
+    text-align: center;
     border-radius: 5% 5% 0% 5%;
     position: absolute;
     top: 4%;
-    left: 3%;
     background-color: rgba(128, 128, 128, 0.641);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.449);
 }
@@ -156,14 +156,15 @@ p{
 }
 #nome{
     font-size: 4.3vh;
-    color: rgba(148, 0, 211, 0.426);
+    color: rgba(148, 0, 211, 0.897);
 }
 #eugostummm{
-    margin-left: 7vh;
+    font-size: 2.5vh;
+    color: white;
 }
 #webdev{
     text-align: center;
-    color: purple;
+    color: rgb(148, 0, 211);
 }
 #circulodaimg{
     background-color: black;
@@ -171,22 +172,42 @@ p{
     width: 6vh;
     height: 6vh;
     overflow: hidden;
+    transition: transform 0.5s;
+    position: absolute;
+    top: 70%;
+    right: 85%;
 }
 #imagemgithub{
     width: 100%;
     height: 100%;
 }
-@media screen and (min-width: 300px) and (max-width: 500px) {
+#circulodaimg:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+@media screen and (min-width: 300px) and (max-width: 1500px) {
     body{
-        overflow: scroll;
+        margin-bottom: 10%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    #frasedeola{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #chatdopersonagem{
         position: absolute;
         top: 70%;
-        left: 5%;
+        height: 25vh;
     }
     #foto{
         width: 50vh;
         height: 50vh;
     }
+}
+@media screen and (min-width: 1200px) {
+    #chatdopersonagem{
+    
+}
 }
