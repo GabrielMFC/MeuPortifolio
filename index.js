@@ -68,17 +68,14 @@ let fecharopcao = 0
         })
         habilidades.addEventListener("click", function  entrarHabilidades() {
         document.getElementById("linkhabilidades").href = "habilidades.html"
-        verificar = 1
         localStorage.setItem("verificar", 1)
         })
         projetos.addEventListener("click", function entrarprojetos() {
             document.getElementById("linkprojetos").href = "projetos.html"
-            verificar = 2
             localStorage.setItem("verificar", 2)
         })
         sobremim.addEventListener("click", function entrarsobremim () {
             document.getElementById("linksobremim").href = "sobremim.html"
-            verificar = 3
             localStorage.setItem("verificar", 3)
         })
         /*

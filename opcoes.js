@@ -64,6 +64,7 @@ let fecharopcao = 0
         }
         menu.addEventListener("click", function entrarmenu() {
             document.getElementById("linkmenu").href = "index.html"
+            verificar = 0
             localStorage.setItem("verificar", 0)
         })
         habilidades.addEventListener("click", function  entrarHabilidades() {
