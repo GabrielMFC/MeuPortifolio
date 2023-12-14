@@ -8,7 +8,7 @@ let fecharopcao = 0
         let projetos = document.getElementById("projetos")
         let sobremim = document.getElementById("sobremim")
 
-       var verificar = 0
+       var verificar = localStorage.getItem("verificar")
 
         document.getElementById("opcao").addEventListener("click", function abriropcoes() {
             if(fecharopcao == 0){
@@ -81,9 +81,3 @@ let fecharopcao = 0
             verificar = 3
             localStorage.setItem("verificar", 3)
         })
-        /*
-        menu.addEventListener("mouseenter", function adicionarunderlinepromenu() {
-        projetos.addEventListener()
-        sobremim.addEventListener()
-        oi
-*/
