@@ -8,7 +8,7 @@ let fecharopcao = 0
         let projetos = document.getElementById("projetos")
         let sobremim = document.getElementById("sobremim")
 
-        let pagina = document.location.pathname
+       let verificar = localStorage.getItem("verificar")
 
         document.getElementById("opcao").addEventListener("click", function abriropcoes() {
             if(fecharopcao == 0){
@@ -35,31 +35,28 @@ let fecharopcao = 0
             }
         )
         
-        if(pagina == "http://127.0.0.1/"){
-            menu.style.textDecoration = "underline"
-            menu.style.textDecorationColor = "purple"
-            menu.style.color = "purple"
-            menu.style.cursor = "default"
-        }
-        if(pagina == "/index.html"){
+        if(verificar == 0){
             menu.style.textDecoration = "underline"
             menu.style.textDecorationColor = "purple"
             menu.style.cursor = "default"
             menu.style.color = "purple"
         }
-        if(pagina == "/habilidades.html") {
+        
+        if(verificar == 1) {
             habilidades.style.textDecoration = "underline"
             habilidades.style.textDecorationColor = "purple"
             habilidades.style.cursor = "default"
             habilidades.style.color = "purple"
         }
-        if(pagina == "/projetos.html"){
+
+        if(verificar == 2){
             projetos.style.textDecoration = "underline"
             projetos.style.textDecorationColor = "purple"
             projetos.style.cursor = "default"
             projetos.style.color = "purple"
         }
-        if(pagina == "/sobremim.html"){
+
+        if(verificar == 3){
             sobremim.style.textDecoration = "underline"
             sobremim.style.textDecorationColor = "purple"
             sobremim.style.cursor = "default"
@@ -67,19 +64,26 @@ let fecharopcao = 0
         }
         menu.addEventListener("click", function entrarmenu() {
             document.getElementById("linkmenu").href = "index.html"
+            localStorage.setItem("verificar", 0)
         })
         habilidades.addEventListener("click", function  entrarHabilidades() {
         document.getElementById("linkhabilidades").href = "habilidades.html"
+        verificar = 1
+        localStorage.setItem("verificar", 1)
         })
         projetos.addEventListener("click", function entrarprojetos() {
             document.getElementById("linkprojetos").href = "projetos.html"
+            verificar = 2
+            localStorage.setItem("verificar", 2)
         })
         sobremim.addEventListener("click", function entrarsobremim () {
             document.getElementById("linksobremim").href = "sobremim.html"
+            verificar = 3
+            localStorage.setItem("verificar", 3)
         })
         /*
         menu.addEventListener("mouseenter", function adicionarunderlinepromenu() {
         projetos.addEventListener()
         sobremim.addEventListener()
         oi
-      */
+*/

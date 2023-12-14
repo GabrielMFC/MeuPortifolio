@@ -156,7 +156,7 @@ p{
 }
 #nome{
     font-size: 4.3vh;
-    color: rgba(148, 0, 211, 0.897);
+    color: rgb(98, 4, 138);
 }
 #eugostummm{
     font-size: 2.5vh;
@@ -164,7 +164,7 @@ p{
 }
 #webdev{
     text-align: center;
-    color: rgb(148, 0, 211);
+    color: rgb(98, 4, 138);
 }
 #circulodaimg{
     background-color: black;
@@ -185,7 +185,7 @@ p{
     cursor: pointer;
     transform: scale(1.2);
 }
-@media screen and (min-width: 300px) and (max-width: 1500px) {
+@media screen and (min-width: 300px) {
     body{
         margin-bottom: 10%;
         overflow-x: hidden;
@@ -200,14 +200,13 @@ p{
         position: absolute;
         top: 70%;
         height: 25vh;
+        width: 45vh;
     }
     #foto{
-        width: 50vh;
-        height: 50vh;
+        width: 40vh;
+        height: 40vh;
     }
-}
-@media screen and (min-width: 1200px) {
-    #chatdopersonagem{
-    
-}
+    #olaeusou{
+        font-size: 2.5vh;
+    }
 }
