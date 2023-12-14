@@ -185,7 +185,7 @@ p{
     cursor: pointer;
     transform: scale(1.2);
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 300px) and (max-width: 840px) {
     body{
         margin-bottom: 10%;
         overflow-x: hidden;
@@ -208,5 +208,35 @@ p{
     }
     #olaeusou{
         font-size: 2.5vh;
+    }
+}
+@media screen and (min-width: 840px) {
+    #centralizarflexifoto{
+        justify-content: center;
+    }
+    #foto{
+        width: 40vh;
+        height: 40vh;
+    }
+    #frasedeola{
+        justify-content: left;
+    }
+    #chatdopersonagem{
+        height: 40vh;
+        width: 50vh;
+        margin-left: 2%;
+        top: 15%;
+    }
+    #olaeusou{
+        font-size: 7vh;
+    }
+    #nome{
+        font-size: 6vh;
+    }
+    #eugostummm{
+        font-size: 2.5vh;
+    }
+    #webdev{
+        font-size: 3vh;
     }
 }

@@ -78,9 +78,3 @@ let fecharopcao = 0
             document.getElementById("linksobremim").href = "sobremim.html"
             localStorage.setItem("verificar", 3)
         })
-        /*
-        menu.addEventListener("mouseenter", function adicionarunderlinepromenu() {
-        projetos.addEventListener()
-        sobremim.addEventListener()
-        oi
-*/
