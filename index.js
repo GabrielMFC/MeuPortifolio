@@ -8,7 +8,7 @@ let fecharopcao = 0
         let projetos = document.getElementById("projetos")
         let sobremim = document.getElementById("sobremim")
 
-       let verificar = localStorage.getItem("verificar")
+       var verificar = localStorage.getItem("verificar")
 
         document.getElementById("opcao").addEventListener("click", function abriropcoes() {
             if(fecharopcao == 0){
