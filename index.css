@@ -9,7 +9,8 @@ body,html{
 }
 body{
     background-color: rgba(0, 0, 0, 0.764);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 #cabecalho{
     background-color: rgba(0, 0, 0, 0.333);
@@ -79,7 +80,7 @@ p{
 }
 .abrir{
     width: 30vh;
-    height: 30vh;
+    height: 16vh;
     background-color: rgba(0, 0, 0, 0.488);
     position: absolute;
     top: 13%;
@@ -138,7 +139,7 @@ a{
 }
 #chatdopersonagem{
     width: 50vh;
-    height: 30vh;
+    height: 25vh;
     text-align: center;
     border-radius: 5% 5% 0% 5%;
     position: absolute;
@@ -185,9 +186,85 @@ p{
     cursor: pointer;
     transform: scale(1.2);
 }
-@media screen and (min-width: 300px) and (max-width: 840px) {
+
+/*CSS do tópico de Habilidades*/
+#barradedivisao{
+    width: 100%;
+    height: 0.5vh;
+    background-color: white;
+}
+#habilidades{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 1%;
+}
+#centralizarflexiimg{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 20vh;
+    height: 20vh;
+}
+#balaodashabilidades{
+    background-color: rgba(128, 128, 128, 0.641);
+    width: 55vh;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5% 0% 5% 5%;
+}
+.habilidadedobalao{
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 3vh;
+}
+/*
+**Celular:**
+1. 428 x 926 pixels (Apple iPhone 12 Pro Max)²
+2. 414 x 896 pixels (Apple iPhone 11 Pro Max)²
+3. 390 x 844 pixels (Apple iPhone 12)²
+4. 375 x 812 pixels (Apple iPhone 11 Pro)²
+5. 360 x 780 pixels (Apple iPhone 12 Mini)²
+6. 320 x 568 pixels (Apple iPhone 5, 5c, 5s)²
+7. 320 x 480 pixels (Apple iPhone 3, 3GS)²
+8. 1170 x 2532 pixels (Apple iPhone 13)²
+9. 1080 x 2340 pixels (Apple iPhone 13 Mini)²
+10. 1179 x 2556 pixels (Apple iPhone 15 Pro)²
+
+**Tablet:**
+1. 1024 x 1366 pixels (Apple iPad Pro 12.9")²
+2. 834 x 1194 pixels (Apple iPad Pro 11")²
+3. 810 x 1080 pixels (Apple iPad 10.2")²
+4. 768 x 1024 pixels (Apple iPad Mini)²
+5. 820 x 1180 pixels (Apple iPad Air 2020)²
+6. 1536 x 2048 pixels (Apple iPad 3, 4, Air, Air2, Mini 2, Mini 3, Mini 4)²
+7. 2048 x 2732 pixels (Apple iPad Pro)²
+8. 600 x 1024 pixels (Amazon Kindle Fire)²
+9. 480 x 800 pixels (Amazon Kindle Fire HD 6, HD 7, HD 10)²
+10. 800 x 1280 pixels (Amazon Kindle Fire HD 8.9")²
+
+**Computador/notebook:**
+1. 3840 x 2160 pixels (4K UHD)⁵
+2. 2560 x 1440 pixels (Quad HD)⁵
+3. 1920 x 1080 pixels (Full HD)⁵
+4. 1366 x 768 pixels⁵
+5. 1600 x 900 pixels (HD+)⁵
+6. 1280 x 1024 pixels (Super-eXtended Graphics Array - SXGA)⁵
+7. 3440 x 1440 pixels (Wide Quad High Definition - WQHD)⁵
+8. 5120 x 2880 pixels (5K/UHD+)⁵
+9. 7680 x 4320 pixels (8K UHD)⁵
+10. 1024 x 768 pixels (XGA)⁵
+
+ */
+@media screen and (min-width: 300px) and (max-width: 839px) {
     body{
-        margin-bottom: 10%;
         overflow-x: hidden;
         overflow-y: scroll;
     }
@@ -222,10 +299,11 @@ p{
         justify-content: left;
     }
     #chatdopersonagem{
-        height: 40vh;
+        height: 35vh;
         width: 50vh;
         margin-left: 2%;
-        top: 15%;
+        position: absolute;
+        top: 20%;
     }
     #olaeusou{
         font-size: 7vh;
@@ -238,5 +316,27 @@ p{
     }
     #webdev{
         font-size: 3vh;
+    }
+}
+@media screen and (min-height: 700px) {
+    img{
+        width: 15vh;
+        height: 15vh;
+    }
+    .habilidadedobalao{
+        margin: 4%;
+    }
+    #chatdopersonagem{
+        width: 50vh;
+        height: 25vh;
+    }
+    #olaeusou{
+        font-size: 6vh;
+    }
+    #nome{
+        font-size: 5vh;
+    }
+    #webdev{
+        font-size: 3.2vh;
     }
 }
