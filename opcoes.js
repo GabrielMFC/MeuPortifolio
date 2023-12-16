@@ -17,7 +17,7 @@ let fecharopcao = 0
                 opcaoaberta.classList.remove("abrir")
                 fecharopcao = 0
                 document.getElementById("menu").innerHTML = ""
-            document.getElementById("Contato").innerHTML = ""
+            document.getElementById("contato").innerHTML = ""
             }
         })
         opcao.addEventListener("mouseenter", function rotacionar() {
@@ -48,7 +48,7 @@ let fecharopcao = 0
             localStorage.setItem("verificar", 0)
         })
         contato.addEventListener("click", function  entrarcontato() {
-        document.getElementById("linkhabilidades").href = "habilidades.html"
+        document.getElementById("linkcontatos").href = "contatos.html"
         verificar = 1
         localStorage.setItem("verificar", 1)
         })

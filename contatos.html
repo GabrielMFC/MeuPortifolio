@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body, html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            overflow: hidden;
+        }
+        #centralizarflexiredessociais{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #redessociais{
+            background-color: #686868ce;
+            width: 70vh;
+            height: 30vh;
+            margin-top: 10%;
+            border-radius: 5% 0% 5% 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #iconedaimg{
+            background-color: black;
+            width: 20vh;
+            height: 20vh;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            border-radius: 50%;
+            width: 80%;
+            height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecalho">
+        <div id="opcao">
+            <img id="opcaoimg" src="opcoes.png" alt="">
+            </div>
+            <div id="opcaoaberta">
+                <a href="#" id="linkmenu">
+                    <p class="itensalinhados" id="menu"></p>
+                </a>
+                <a href="#" id="linkhabilidades">
+                    <p class="itensalinhados" id="contato"></p>
+                </a>
+            </div>
+    </div>
+
+    <div id="centralizarflexiredessociais"><div id="redessociais">
+        <a id="linkredessociais" href="#">
+        <div id="iconedaimg">
+            <img src="iconedogithub.png" alt="">
+    </div>
+</a>
+</div>
+    
+</div>
+    <script src="opcoes.js"></script>
+    <script>
+        let verificar = localStorage.getItem("verificar")
+        let github = document.getElementById("iconedaimg")
+        let link = document.getElementById("linkredessociais")
+        github.addEventListener("click", function abrirgithub() {
+            link.href = "https://github.com/GabrielMFC"
+        })
+    </script>
+</body>
+</html>

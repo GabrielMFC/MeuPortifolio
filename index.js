@@ -41,12 +41,12 @@ let fecharopcao = 0
             contato.style.cursor = "default"
             contato.style.color = "purple"
         }
-        
+
         menu.addEventListener("click", function entrarmenu() {
             document.getElementById("linkmenu").href = "index.html"
             localStorage.setItem("verificar", 0)
         })
         contato.addEventListener("click", function  entrarContato() {
-        document.getElementById("linkhabilidades").href = "habilidades.html"
+        document.getElementById("linkcontatos").href = "contatos.html"
         localStorage.setItem("verificar", 1)
         })
