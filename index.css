@@ -3,7 +3,6 @@
     padding: 0px;
 }
 body,html{
-
     width: 100%;
     height: 100%;
 }
@@ -188,7 +187,7 @@ p{
 }
 
 /*CSS do tópico de Habilidades*/
-#barradedivisao{
+#barradedivisaohabilidades{
     width: 100%;
     height: 0.5vh;
     background-color: white;
@@ -224,6 +223,159 @@ img{
     color: white;
     font-weight: bold;
     font-size: 3vh;
+}
+
+/*Tópico de projetos*/
+#centralizarprojetosflexi{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#barradedivisaoprojetos{
+    width: 100%;
+    height: 0.5vh;
+    background-color: white;
+    position: absolute;
+    top: 160%;
+}
+h1{
+    text-align: center;
+    margin-bottom: 2%;
+    color: white;
+    font-family: sans-serif;
+}
+.projetos{
+    width: 32vh;
+    height: 35vh;
+    background-color: gray;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    text-align: center;
+}
+.bordadoprojeto{
+    width: 70%;
+    height: 90%;
+    background-color: black;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alinhartexto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.imgdoprojeto{
+    width: 80%;
+    height: 80%;
+}
+.nomedoprojeto{
+    color: white;
+    font-size: 3vh;
+    font-family: sans-serif;
+    transform: rotate(-90deg);
+    font-weight: bold;
+}
+#teste1{
+    height: 100%;
+    width: 20%;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0% 5% 0% 5%;
+}
+@media screen and (min-width: 300px) and (max-width: 839px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    #frasedeola{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #chatdopersonagem{
+        position: absolute;
+        top: 70%;
+        height: 25vh;
+        width: 45vh;
+    }
+    #foto{
+        width: 40vh;
+        height: 40vh;
+    }
+    #olaeusou{
+        font-size: 2.5vh;
+    }
+    img{
+        width: 18vh;
+        height: 18vh;
+    }
+}
+@media screen and (min-width: 840px) {
+    #centralizarflexifoto{
+        justify-content: center;
+    }
+    #foto{
+        width: 40vh;
+        height: 40vh;
+    }
+    #frasedeola{
+        justify-content: left;
+    }
+    #chatdopersonagem{
+        height: 35vh;
+        width: 50vh;
+        margin-left: 2%;
+        position: absolute;
+        top: 20%;
+    }
+    #olaeusou{
+        font-size: 7vh;
+    }
+    #nome{
+        font-size: 6vh;
+    }
+    #eugostummm{
+        font-size: 2.5vh;
+    }
+    #webdev{
+        font-size: 3vh;
+    }
+}
+@media screen and (min-height: 600px) {
+    img{
+        width: 10vh;
+        height: 10vh;
+    }
+    .habilidadedobalao{
+        margin: 4%;
+    }
+    #chatdopersonagem{
+        width: 40vh;
+        height: 25vh;
+    }
+    #olaeusou{
+        font-size: 6vh;
+    }
+    #nome{
+        font-size: 5vh;
+    }
+    #webdev{
+        font-size: 3.2vh;
+    }
+    #balaodashabilidades{
+        width: 42vh;
+        height: 50%;
+    }
 }
 /*
 **Celular:**
@@ -263,80 +415,3 @@ img{
 10. 1024 x 768 pixels (XGA)⁵
 
  */
-@media screen and (min-width: 300px) and (max-width: 839px) {
-    body{
-        overflow-x: hidden;
-        overflow-y: scroll;
-    }
-    #frasedeola{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #chatdopersonagem{
-        position: absolute;
-        top: 70%;
-        height: 25vh;
-        width: 45vh;
-    }
-    #foto{
-        width: 40vh;
-        height: 40vh;
-    }
-    #olaeusou{
-        font-size: 2.5vh;
-    }
-}
-@media screen and (min-width: 840px) {
-    #centralizarflexifoto{
-        justify-content: center;
-    }
-    #foto{
-        width: 40vh;
-        height: 40vh;
-    }
-    #frasedeola{
-        justify-content: left;
-    }
-    #chatdopersonagem{
-        height: 35vh;
-        width: 50vh;
-        margin-left: 2%;
-        position: absolute;
-        top: 20%;
-    }
-    #olaeusou{
-        font-size: 7vh;
-    }
-    #nome{
-        font-size: 6vh;
-    }
-    #eugostummm{
-        font-size: 2.5vh;
-    }
-    #webdev{
-        font-size: 3vh;
-    }
-}
-@media screen and (min-height: 700px) {
-    img{
-        width: 15vh;
-        height: 15vh;
-    }
-    .habilidadedobalao{
-        margin: 4%;
-    }
-    #chatdopersonagem{
-        width: 50vh;
-        height: 25vh;
-    }
-    #olaeusou{
-        font-size: 6vh;
-    }
-    #nome{
-        font-size: 5vh;
-    }
-    #webdev{
-        font-size: 3.2vh;
-    }
-}
