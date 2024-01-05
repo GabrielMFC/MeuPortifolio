@@ -246,8 +246,8 @@ h1{
     font-family: sans-serif;
 }
 .projetos{
-    width: 32vh;
-    height: 35vh;
+    width: 30vh;
+    height: 30vh;
     background-color: gray;
     border-radius: 5%;
     display: flex;
@@ -352,8 +352,8 @@ a{
         height: 18vh;
     }
     .projetos{
-        width: 22vh;
-        height: 22vh;
+        width: 24vh;
+        height: 25vh;
     }
     img{
         width: 15vh;
