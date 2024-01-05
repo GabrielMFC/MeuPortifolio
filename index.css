@@ -8,8 +8,7 @@ body,html{
 }
 body{
     background-color: rgba(0, 0, 0, 0.764);
-    overflow-x: hidden;
-    overflow-y: scroll;
+    position: absolute;
 }
 #cabecalho{
     background-color: rgba(0, 0, 0, 0.333);
@@ -79,7 +78,7 @@ p{
 }
 .abrir{
     width: 30vh;
-    height: 16vh;
+    height: 25vh;
     background-color: rgba(0, 0, 0, 0.488);
     position: absolute;
     top: 13%;
@@ -210,7 +209,7 @@ img{
 }
 #balaodashabilidades{
     background-color: rgba(128, 128, 128, 0.641);
-    width: 55vh;
+    width: 50vh;
     height: 70%;
     display: flex;
     justify-content: center;
@@ -254,7 +253,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5%;
+    margin: 0%;
     text-align: center;
 }
 a{
@@ -345,9 +344,20 @@ a{
     #olaeusou{
         font-size: 2.5vh;
     }
+    #centralizarflexiimg{
+        width: 100%;
+    }
     img{
         width: 18vh;
         height: 18vh;
+    }
+    .projetos{
+        width: 22vh;
+        height: 22vh;
+    }
+    img{
+        width: 15vh;
+        height: 15vh;
     }
 }
 @media screen and (min-width: 840px) {
