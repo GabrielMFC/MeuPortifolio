@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow: hidden;
+}
+#centralizarflexiredessociais{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+#redessociais{
+    background-color: #686868ce;
+    width: 70vh;
+    height: 30vh;
+    margin-top: 10%;
+    border-radius: 5% 0% 5% 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+}
+.imagem{
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    margin-left: 5%;
+    position: absolute;
+}
+.PDaredeSocial{
+    position: absolute;
+    right: 0%;
+    margin-right: 25%;
+    font-size: 3vh;
+    color: white;
+}
+.areaDoContato{
+    background-color: rgba(0, 0, 0, 0.333);
+    width: 25vh;
+    height: 7vh;
+    border-radius: 10%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+#github{
+    top: 15%;
+    left: 8%;
+}
+#email{
+    left: 3.5%;
+    top: 55%;
+    width: 35vh;
+    cursor: default;
+    z-index: 0;
+    user-select: auto;
+}
+#emaillink{
+    z-index: 0;
+}
+#insta{
+    right: 8%;
+    top: 15%;
+    width: 29vh;
+}
+#pgemail{
+    font-size: 1.9vh;
+    left: 23%;
+    z-index: 2;
+}
+.areaDoContato:hover{
+    background-color: rgb(163, 2, 163);
+}
+@media screen and (max-width: 500px) {
+    .areaDoContato{
+        width: 10vh;
+        height: 10vh;
+        display: flex;
+    }
+    #github{
+        border-radius: 50%;
+        justify-content: center;
+    }
+    #github > img{
+        width: 100%;
+        height: 100%;
+    }
+    #insta{
+        width: 10vh;
+        height: 10vh;
+        border-radius: 50%;
+        justify-content: center;
+    }
+    #insta > img{
+        width: 100%;
+        height: 100%;
+    }
+    .PDaredeSocial{
+        font-size: 0vh;
+        width: 0vh;
+        height: 0vh;
+    }
+    #email{
+        top: 60%;
+    }
+    #email > p{
+        font-size: 2vh;
+        position: absolute;
+        top: 40%;
+    }
+}
+@media screen and (min-width: 500px){
+    #redessociais{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+    }
+    .PDaredeSocial{
+        position: absolute;
+        left: 40%;
+    }
+    #github{
+        left: 5%;
+        width: 30vh;
+    }
+    #insta{
+        top: 40%;
+        left: 5%;
+    }
+    #email{
+        top: 65%;
+        left: 5%;
+    }
+    .areaDoContato{
+        width: 50vh;
+        height: 10vh;
+    }
+}

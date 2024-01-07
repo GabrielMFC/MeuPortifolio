@@ -5,65 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="index.css">
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        body, html{
-            width: 100%;
-            height: 100%;
-        }
-        body{
-            overflow: hidden;
-        }
-        #centralizarflexiredessociais{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-        }
-        #redessociais{
-            background-color: #686868ce;
-            width: 70vh;
-            height: 30vh;
-            margin-top: 10%;
-            border-radius: 5% 0% 5% 5%;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        img{
-            border-radius: 50%;
-            width: 5vh;
-            height: 5vh;
-            margin-left: 5%;
-            position: absolute;
-        }
-        .PDaredeSocial{
-            position: absolute;
-            right: 0%;
-            margin-right: 25%;
-            font-size: 3vh;
-            color: rgb(163, 2, 163);
-        }
-        #github{
-            background-color: rgba(0, 0, 0, 0.333);
-            width: 25vh;
-            height: 7vh;
-            border-radius: 10%;
-            position: absolute;
-            display: flex;
-            align-items: center;
-            left: 2%;
-            top: 5%;
-        }
-        #github:hover{
-            background-color: rgb(163, 2, 163);
-        }
-    </style>
+    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
     <div id="cabecalho">
@@ -80,11 +22,26 @@
             </div>
     </div>
 
-    <div id="centralizarflexiredessociais"><div id="redessociais">
-        <a id="linkredessociais" href="https://github.com/GabrielMFC">
-        <div id="github">
-                <img src="iconedogithub.png" alt="">
+    <div id="centralizarflexiredessociais">
+        <div id="redessociais">
+        <a class="linkredessociais" href="https://github.com/GabrielMFC">
+        <div class="areaDoContato" id="github">
+                <img class="imagem" src="iconedogithub.png" alt="">
                 <p class="PDaredeSocial" id="pgithub">Github</p>
+                </div>
+            </a>
+
+            <a class="linkredessociais" id="emaillink" href="#">
+                <div class="areaDoContato" id="email">
+                    <img class="imagem" src="email-icon--clipart-best-22.png" alt="">
+                    <p class="PDaredeSocial" id="pgemail">ggezcom991gh@gmail.com</p>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/code_is_life1/">
+            <div class="areaDoContato" id="insta">
+                <img class="imagem" src="instagram.png" alt="">
+                <p class="PDaredeSocial" id="pinsta">Instagram</p>
                 </div>
             </a>
         </div>
@@ -93,14 +50,10 @@
 
     <script src="opcoes.js"></script>
     <script>
-        let githubarea  = document.getElementById("github")
-        let prgithub = document.getElementById("pgithub")
-        githubarea.addEventListener("mouseenter", function mudarPdeCor() {
-            prgithub.style.color = "white"
-        })
-        githubarea.addEventListener("mouseout", function mudarPdeCor2() {
-            prgithub.style.color = "rgb(163, 2, 163)"
-        })
+        let pgf = document.querySelectorAll(".PDaredeSocial")
+        let areaDoContato = document.querySelectorAll(".areaDoContato")
+        let imagem = document.querySelectorAll(".imagem")
+        let link = document.querySelectorAll(".linkredessociais")
     </script>
 </body>
 </html>
