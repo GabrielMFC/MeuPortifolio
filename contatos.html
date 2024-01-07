@@ -20,6 +20,7 @@
         #centralizarflexiredessociais{
             width: 100%;
             height: 100%;
+            position: absolute;
             display: flex;
             justify-content: center;
         }
@@ -29,23 +30,38 @@
             height: 30vh;
             margin-top: 10%;
             border-radius: 5% 0% 5% 5%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #iconedaimg{
-            background-color: black;
-            width: 20vh;
-            height: 20vh;
-            border-radius: 50%;
+            position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         img{
             border-radius: 50%;
-            width: 80%;
-            height: 80%;
+            width: 5vh;
+            height: 5vh;
+            margin-left: 5%;
+            position: absolute;
+        }
+        .PDaredeSocial{
+            position: absolute;
+            right: 0%;
+            margin-right: 25%;
+            font-size: 3vh;
+            color: rgb(163, 2, 163);
+        }
+        #github{
+            background-color: rgba(0, 0, 0, 0.333);
+            width: 25vh;
+            height: 7vh;
+            border-radius: 10%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            left: 2%;
+            top: 5%;
+        }
+        #github:hover{
+            background-color: rgb(163, 2, 163);
         }
     </style>
 </head>
@@ -65,23 +81,25 @@
     </div>
 
     <div id="centralizarflexiredessociais"><div id="redessociais">
-        <a id="linkredessociais" href="#">
-        <div id="iconedaimg">
-            
-            <img src="iconedogithub.png" alt="">
-        
-    </div>
+        <a id="linkredessociais" href="https://github.com/GabrielMFC">
+        <div id="github">
+                <img src="iconedogithub.png" alt="">
+                <p class="PDaredeSocial" id="pgithub">Github</p>
+                </div>
+            </a>
+        </div>
 </div>
-</div>
-</a>
+
 
     <script src="opcoes.js"></script>
     <script>
-        let verificando = localStorage.getItem("verificar")
-        let github = document.getElementById("iconedaimg")
-        let link = document.getElementById("linkredessociais")
-        github.addEventListener("click", function abrirgithub() {
-            link.href = "https://github.com/GabrielMFC"
+        let githubarea  = document.getElementById("github")
+        let prgithub = document.getElementById("pgithub")
+        githubarea.addEventListener("mouseenter", function mudarPdeCor() {
+            prgithub.style.color = "white"
+        })
+        githubarea.addEventListener("mouseout", function mudarPdeCor2() {
+            prgithub.style.color = "rgb(163, 2, 163)"
         })
     </script>
 </body>
